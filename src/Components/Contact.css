@@ -1,0 +1,170 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 40px 20px;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 0.8s ease-out;
+    width: 100%;
+}
+
+.contact-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: calc(100% - 40px);
+    margin-bottom: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.contact-content p {
+    color: #2d3748;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-content ul li {
+    font-size: 1.1rem;
+    color: #4a5568;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: linear-gradient(135deg, #e0f7ff 0%, #b3ecff 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-content ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-content a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+.contact .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.contact .nav-links p {
+    background: white;
+    padding: 15px 30px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+    text-align: center;
+}
+
+.contact .nav-links p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact .nav-links a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact .nav-links a:hover {
+    color: #00f2fe;
+    text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px 10px;
+    }
+    
+    .contact h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-content {
+        padding: 25px;
+        width: calc(100% - 20px);
+    }
+
+    .contact-content p {
+        font-size: 1rem;
+    }
+
+    .contact-content ul li {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .contact .nav-links p {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .contact .nav-links {
+        gap: 10px;
+    }
+}

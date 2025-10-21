@@ -1,0 +1,31 @@
+.admin-panel {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.admin-panel h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-panel h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+.admin-panel table {
+    font-size: 14px;
+}
+
+.admin-panel table th {
+    font-weight: 600;
+}
+
+.admin-panel table tbody tr:hover {
+    background-color: #f8f9fa;
+}
